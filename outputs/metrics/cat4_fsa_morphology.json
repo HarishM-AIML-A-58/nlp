@@ -1,0 +1,17 @@
+{
+  "words_analyzed": 2000,
+  "detection_counts": {
+    "plural": 130,
+    "past_tense": 120,
+    "progressive": 95,
+    "comparative": 7,
+    "negation": 44
+  },
+  "detection_rates": {
+    "plural": 0.065,
+    "past_tense": 0.06,
+    "progressive": 0.0475,
+    "comparative": 0.0035,
+    "negation": 0.022
+  }
+}

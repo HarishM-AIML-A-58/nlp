@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.env
+.venv
+venv/
+env/
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Large model files
+*.bin
+*.pkl
+*.pt
+*.pth
+models/
+*.model
+
+# Keep gitkeep files
+!outputs/plots/.gitkeep
+!outputs/metrics/.gitkeep

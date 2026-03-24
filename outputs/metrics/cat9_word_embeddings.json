@@ -1,0 +1,132 @@
+{
+  "models": {
+    "cbow_100": {
+      "vocab_size": 7777
+    },
+    "skipgram_100": {
+      "vocab_size": 7777
+    },
+    "cbow_50": {
+      "vocab_size": 7777
+    }
+  },
+  "analogy_eval": {
+    "accuracy": 0.0,
+    "correct": 0,
+    "total": 5
+  },
+  "nearest_neighbors": {
+    "king": [
+      [
+        "shreveport",
+        0.9496
+      ],
+      [
+        "pat",
+        0.9462
+      ],
+      [
+        "edward",
+        0.9437
+      ],
+      [
+        "detroit",
+        0.9383
+      ],
+      [
+        "thomas",
+        0.9375
+      ]
+    ],
+    "science": [
+      [
+        "wells",
+        0.9678
+      ],
+      [
+        "fargo",
+        0.9587
+      ],
+      [
+        "oak",
+        0.9556
+      ],
+      [
+        "gobain",
+        0.9547
+      ],
+      [
+        "entre",
+        0.9546
+      ]
+    ],
+    "government": [
+      [
+        "economy",
+        0.8256
+      ],
+      [
+        "measures",
+        0.7763
+      ],
+      [
+        "order",
+        0.7506
+      ],
+      [
+        "support",
+        0.7399
+      ],
+      [
+        "impact",
+        0.738
+      ]
+    ],
+    "war": [
+      [
+        "russia",
+        0.8088
+      ],
+      [
+        "hard",
+        0.8055
+      ],
+      [
+        "cold",
+        0.7938
+      ],
+      [
+        "peace",
+        0.7918
+      ],
+      [
+        "communism",
+        0.7901
+      ]
+    ],
+    "city": [
+      [
+        "fire",
+        0.8453
+      ],
+      [
+        "council",
+        0.8128
+      ],
+      [
+        "local",
+        0.8053
+      ],
+      [
+        "commerce",
+        0.8038
+      ],
+      [
+        "committee",
+        0.7988
+      ]
+    ]
+  },
+  "total_corpus_tokens": 250801,
+  "category_words_found": 55
+}

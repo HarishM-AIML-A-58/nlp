@@ -1,0 +1,112 @@
+{
+  "tfidf": {
+    "n_docs": 789,
+    "vocab_size": 5000,
+    "top_words": [
+      [
+        "said",
+        0.0582
+      ],
+      [
+        "mln",
+        0.0545
+      ],
+      [
+        "cts",
+        0.0472
+      ],
+      [
+        "net",
+        0.0381
+      ],
+      [
+        "dlrs",
+        0.0366
+      ],
+      [
+        "trade",
+        0.0365
+      ],
+      [
+        "billion",
+        0.0325
+      ],
+      [
+        "japan",
+        0.0279
+      ],
+      [
+        "pct",
+        0.027
+      ],
+      [
+        "shr",
+        0.0256
+      ]
+    ]
+  },
+  "cosine": {
+    "avg_intra_class": 0.0483,
+    "avg_inter_class": 0.0
+  },
+  "pmi": {
+    "matrix_shape": [
+      200,
+      200
+    ],
+    "vocab_size": 200,
+    "top_pairs": [
+      [
+        "per",
+        "cent",
+        7.09
+      ],
+      [
+        "cent",
+        "per",
+        7.09
+      ],
+      [
+        "states",
+        "united",
+        5.976
+      ],
+      [
+        "united",
+        "states",
+        5.976
+      ],
+      [
+        "house",
+        "white",
+        5.663
+      ],
+      [
+        "white",
+        "house",
+        5.663
+      ],
+      [
+        "school",
+        "high",
+        5.54
+      ],
+      [
+        "high",
+        "school",
+        5.54
+      ],
+      [
+        "new",
+        "york",
+        5.519
+      ],
+      [
+        "york",
+        "new",
+        5.519
+      ]
+    ],
+    "semantic_similarities": {}
+  }
+}

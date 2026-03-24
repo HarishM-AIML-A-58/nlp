@@ -1,0 +1,20 @@
+{
+  "brown": {
+    "vocab_size": 7218,
+    "total_tokens": 42880,
+    "entropy_bits": 9.9128,
+    "perplexity": {
+      "MLE (Laplace k=1)": 1425.69,
+      "Laplace k=0.5": 1536.27
+    }
+  },
+  "reuters": {
+    "vocab_size": 6042,
+    "total_tokens": 57059,
+    "entropy_bits": 9.6696,
+    "perplexity": {
+      "MLE (Laplace k=1)": 1147.63,
+      "Laplace k=0.5": 1200.16
+    }
+  }
+}

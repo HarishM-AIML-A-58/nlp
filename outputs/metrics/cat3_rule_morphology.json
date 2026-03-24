@@ -1,0 +1,42 @@
+{
+  "total_words": 1000,
+  "pos_distribution": {
+    "UNKNOWN": 670,
+    "VERB": 152,
+    "NOUN": 97,
+    "ADV": 38,
+    "ADJ": 43
+  },
+  "top_suffixes": {
+    "ing": 78,
+    "ed": 69,
+    "er": 43,
+    "ly": 38,
+    "al": 25,
+    "tion": 18,
+    "or": 10,
+    "ation": 9,
+    "ment": 8,
+    "ive": 8
+  },
+  "top_prefixes": {
+    "co": 48,
+    "re": 42,
+    "in": 19,
+    "un": 11,
+    "pre": 8,
+    "dis": 3,
+    "sub": 3,
+    "under": 3,
+    "im": 3,
+    "trans": 2
+  },
+  "morpheme_count_dist": {
+    "1": 605,
+    "2": 305,
+    "3": 84,
+    "4": 6
+  },
+  "words_with_prefix": 144,
+  "words_with_suffix": 330
+}

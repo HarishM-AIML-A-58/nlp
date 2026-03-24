@@ -1,0 +1,56 @@
+{
+  "brown": {
+    "raw": {
+      "total_tokens": 2268,
+      "unique_tokens": 860,
+      "avg_token_length": 4.581
+    },
+    "cleaned": {
+      "total_tokens": 2009,
+      "unique_tokens": 801,
+      "avg_token_length": 4.972
+    },
+    "no_stops": {
+      "total_tokens": 1192,
+      "unique_tokens": 714,
+      "avg_token_length": 6.443
+    },
+    "stemmed": {
+      "total_tokens": 0,
+      "unique_tokens": 0,
+      "avg_token_length": 0.0
+    },
+    "lemmatized": {
+      "total_tokens": 1192,
+      "unique_tokens": 677,
+      "avg_token_length": 6.309
+    }
+  },
+  "reuters": {
+    "raw": {
+      "total_tokens": 2766,
+      "unique_tokens": 1034,
+      "avg_token_length": 4.193
+    },
+    "cleaned": {
+      "total_tokens": 2396,
+      "unique_tokens": 916,
+      "avg_token_length": 4.677
+    },
+    "no_stops": {
+      "total_tokens": 1541,
+      "unique_tokens": 828,
+      "avg_token_length": 5.804
+    },
+    "stemmed": {
+      "total_tokens": 0,
+      "unique_tokens": 0,
+      "avg_token_length": 0.0
+    },
+    "lemmatized": {
+      "total_tokens": 1541,
+      "unique_tokens": 793,
+      "avg_token_length": 5.69
+    }
+  }
+}

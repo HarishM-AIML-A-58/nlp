@@ -1,0 +1,26 @@
+{
+  "brown": {
+    "vocab_size": 7220,
+    "unique_bigrams": 30262,
+    "perplexity": {
+      "laplace": 3645.49,
+      "good_turing": 1893.65,
+      "kneser_ney": 692.59
+    }
+  },
+  "reuters": {
+    "vocab_size": 6044,
+    "unique_bigrams": 31351,
+    "perplexity": {
+      "laplace": 2044.7,
+      "good_turing": 705.77,
+      "kneser_ney": 350.85
+    }
+  },
+  "cross_corpus": {
+    "Brown\u2192Brown": 663.06,
+    "Brown\u2192Reuters": 1094.79,
+    "Reuters\u2192Reuters": 383.25,
+    "Reuters\u2192Brown": 934.63
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "spelling_correction": {
+    "goverment": [
+      [
+        "government",
+        0.922
+      ],
+      [
+        "movement",
+        0.0507
+      ],
+      [
+        "governments",
+        0.0273
+      ]
+    ],
+    "recieve": [
+      [
+        "receive",
+        0.4883
+      ],
+      [
+        "believe",
+        0.4232
+      ],
+      [
+        "relieve",
+        0.0885
+      ]
+    ],
+    "occured": [
+      [
+        "occurred",
+        0.6016
+      ],
+      [
+        "accused",
+        0.3541
+      ],
+      [
+        "occur",
+        0.0443
+      ]
+    ],
+    "beutiful": [
+      [
+        "beautiful",
+        1.0
+      ]
+    ],
+    "definately": [
+      [
+        "definitely",
+        1.0
+      ]
+    ]
+  },
+  "cbow": {
+    "model_type": "CBOW",
+    "corpus": "brown+reuters",
+    "vocab_size": 8056,
+    "analogies": {
+      "king-man+woman": [
+        [
+          "mcdaniel",
+          0.957
+        ],
+        [
+          "adds",
+          0.9569
+        ],
+        [
+          "willy",
+          0.9566
+        ]
+      ],
+      "paris-france+germany": [
+        [
+          "officials",
+          0.8663
+        ],
+        [
+          "japan",
+          0.8663
+        ],
+        [
+          "worrying",
+          0.8637
+        ]
+      ]
+    },
+    "similarities": {
+      "man-woman": "0.8771",
+      "king-queen": "0.965",
+      "good-bad": "0.817",
+      "cat-dog": "0.8429"
+    },
+    "neighbors": {
+      "government": [
+        [
+          "triggered",
+          0.9269
+        ],
+        [
+          "lawmakers",
+          0.9172
+        ],
+        [
+          "tighten",
+          0.9118
+        ],
+        [
+          "administration",
+          0.9045
+        ],
+        [
+          "industry",
+          0.9044
+        ]
+      ],
+      "people": [
+        [
+          "way",
+          0.958
+        ],
+        [
+          "need",
+          0.9533
+        ],
+        [
+          "whether",
+          0.9507
+        ],
+        [
+          "vote",
+          0.9478
+        ],
+        [
+          "even",
+          0.947
+        ]
+      ],
+      "city": [
+        [
+          "commissioners",
+          0.9306
+        ],
+        [
+          "democratic",
+          0.9299
+        ],
+        [
+          "ministers",
+          0.9284
+        ],
+        [
+          "council",
+          0.9261
+        ],
+        [
+          "secretary",
+          0.9237
+        ]
+      ],
+      "work": [
+        [
+          "vote",
+          0.9514
+        ],
+        [
+          "present",
+          0.9466
+        ],
+        [
+          "move",
+          0.9423
+        ],
+        [
+          "laos",
+          0.9375
+        ],
+        [
+          "khrushchev",
+          0.9368
+        ]
+      ]
+    }
+  },
+  "skipgram": {
+    "model_type": "Skip-gram",
+    "corpus": "brown+reuters",
+    "vocab_size": 8056,
+    "analogies": {
+      "king-man+woman": [
+        [
+          "bushes",
+          0.911
+        ],
+        [
+          "madame",
+          0.9098
+        ],
+        [
+          "ribbons",
+          0.9095
+        ]
+      ],
+      "paris-france+germany": [
+        [
+          "accord",
+          0.7684
+        ],
+        [
+          "reaffirmation",
+          0.7394
+        ],
+        [
+          "troops",
+          0.7118
+        ]
+      ]
+    },
+    "similarities": {
+      "man-woman": "0.7286",
+      "king-queen": "0.9106",
+      "good-bad": "0.6863",
+      "cat-dog": "0.7471"
+    },
+    "neighbors": {
+      "government": [
+        [
+          "tighten",
+          0.6729
+        ],
+        [
+          "coalition",
+          0.6537
+        ],
+        [
+          "forces",
+          0.6457
+        ],
+        [
+          "alliance",
+          0.6441
+        ],
+        [
+          "measure",
+          0.6414
+        ]
+      ],
+      "people": [
+        [
+          "rid",
+          0.7611
+        ],
+        [
+          "colored",
+          0.7597
+        ],
+        [
+          "truth",
+          0.7568
+        ],
+        [
+          "freedom",
+          0.7478
+        ],
+        [
+          "shall",
+          0.7439
+        ]
+      ],
+      "city": [
+        [
+          "attended",
+          0.7337
+        ],
+        [
+          "governor",
+          0.7277
+        ],
+        [
+          "railroad",
+          0.7164
+        ],
+        [
+          "kansas",
+          0.7108
+        ],
+        [
+          "attorneys",
+          0.7028
+        ]
+      ],
+      "work": [
+        [
+          "kern",
+          0.7597
+        ],
+        [
+          "space",
+          0.7528
+        ],
+        [
+          "stage",
+          0.7455
+        ],
+        [
+          "endorse",
+          0.7455
+        ],
+        [
+          "shake",
+          0.7405
+        ]
+      ]
+    }
+  }
+}

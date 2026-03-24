@@ -1,0 +1,38 @@
+{
+  "entropy": {
+    "Brown": 9.823568,
+    "Reuters": 9.622394,
+    "Newsgroups": 9.183459
+  },
+  "cross_entropy_matrix": {
+    "Brown": {
+      "Brown": 9.8236,
+      "Reuters": 14.8997,
+      "Newsgroups": 17.7284
+    },
+    "Reuters": {
+      "Brown": 16.2647,
+      "Reuters": 9.6224,
+      "Newsgroups": 15.0981
+    },
+    "Newsgroups": {
+      "Brown": 16.6487,
+      "Reuters": 12.0288,
+      "Newsgroups": 9.1835
+    }
+  },
+  "kl_divergence": {
+    "Brown\u2192Reuters": 5.0761,
+    "Brown\u2192Newsgroups": 7.9048,
+    "Reuters\u2192Brown": 6.6423,
+    "Reuters\u2192Newsgroups": 5.4757,
+    "Newsgroups\u2192Brown": 7.4652,
+    "Newsgroups\u2192Reuters": 2.8453
+  },
+  "perplexity": {
+    "brown_none": 1448.3526,
+    "brown_laplace": 1448.3526,
+    "brown_on_reuters": 2426.0676,
+    "brown_on_newsgroups": 2543.2542
+  }
+}
