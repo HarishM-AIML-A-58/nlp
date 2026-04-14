@@ -425,7 +425,7 @@ def plot_forward_log_probs(log_probs_list, labels):
     ax.set_xticks(range(len(labels)))
     ax.set_xticklabels(labels, rotation=45, ha='right', fontsize=8)
     ax.set_title('Forward Algorithm: Log P(sentence | HMM model)', fontsize=12)
-    ax.set_xlabel('Sentence index')
+    ax.set_xlabel('Test Sentence')
     ax.set_ylabel('Log Probability')
     plt.tight_layout()
     path = os.path.join(PLOTS_DIR, 'cat10_forward_log_probs.png')
@@ -482,7 +482,7 @@ def run():
         words = [w for w, _ in sent]
         lp, _ = forward_log_prob(words, tag2i, word2i, log_pi, log_A, log_B)
         fwd_log_probs.append(float(lp))
-        fwd_labels.append(f"S{i+1}(len={len(words)})")
+        fwd_labels.append(f"S{i+1}")
         print(f"  Sentence {i+1:2d} (len={len(words):2d}): log P = {lp:.4f}")
 
     plot_forward_log_probs(fwd_log_probs, fwd_labels)
