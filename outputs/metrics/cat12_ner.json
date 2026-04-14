@@ -1,0 +1,155 @@
+{
+  "total_entities_found": {
+    "PERSON": 218,
+    "ORG": 208,
+    "LOC": 237
+  },
+  "per_type_counts": {
+    "top_persons": {
+      "Sumitomo": 12,
+      "Komatsu": 7,
+      "Dallas": 5,
+      "Clark": 5,
+      "Texas": 4,
+      "Daniel": 4,
+      "Atlas": 4,
+      "Kim": 4,
+      "Fulton County": 3,
+      "Pelham": 3,
+      "Cotten": 3,
+      "Heiwa Sogo": 3,
+      "Davis": 2,
+      "Bush": 2,
+      "Williams": 2,
+      "George Parkhouse": 2,
+      "Berry": 2,
+      "Ratcliff": 2,
+      "Roberts": 2,
+      "College": 2
+    },
+    "top_organizations": {
+      "House": 8,
+      "Adc": 8,
+      "Bundesbank": 8,
+      "Senate": 6,
+      "Miti": 5,
+      "Legislature": 3,
+      "Cpo": 3,
+      "Fob": 3,
+      "Nsw": 3,
+      "Wmc": 3,
+      "Ita": 3,
+      "City": 2,
+      "Atlanta": 2,
+      "State Highway Department": 2,
+      "Highway Department": 2,
+      "Rural Roads": 2,
+      "Congress": 2,
+      "Education": 2,
+      "Fort Worth": 2,
+      "University": 2
+    },
+    "top_locations": {
+      "Japan": 27,
+      "Texas": 11,
+      "Japanese": 10,
+      "South Korea": 10,
+      "China": 8,
+      "Austin": 7,
+      "Indonesia": 7,
+      "Dallas": 6,
+      "Fulton": 5,
+      "Taiwan": 5,
+      "Indonesian": 5,
+      "Hong Kong": 4,
+      "Atlas": 4,
+      "Washington": 3,
+      "Paris": 3,
+      "Oklahoma": 3,
+      "American": 3,
+      "Malaysia": 3,
+      "Australia": 3,
+      "Atlanta": 2
+    }
+  },
+  "evaluation_f1_scores": {
+    "rule_based": {
+      "PERSON": 0.5455,
+      "ORG": 0.898,
+      "LOC": 0.8372
+    },
+    "nltk_ne_chunk": {
+      "PERSON": 0.4286,
+      "ORG": 0.4348,
+      "LOC": 0.76
+    }
+  },
+  "evaluation_full": {
+    "rule_based": {
+      "PERSON": {
+        "precision": 0.6667,
+        "recall": 0.4615,
+        "f1": 0.5455,
+        "tp": 6,
+        "fp": 3,
+        "fn": 7
+      },
+      "ORG": {
+        "precision": 0.9565,
+        "recall": 0.8462,
+        "f1": 0.898,
+        "tp": 22,
+        "fp": 1,
+        "fn": 4
+      },
+      "LOC": {
+        "precision": 0.9474,
+        "recall": 0.75,
+        "f1": 0.8372,
+        "tp": 18,
+        "fp": 1,
+        "fn": 6
+      }
+    },
+    "nltk_ne_chunk": {
+      "PERSON": {
+        "precision": 0.3103,
+        "recall": 0.6923,
+        "f1": 0.4286,
+        "tp": 9,
+        "fp": 20,
+        "fn": 4
+      },
+      "ORG": {
+        "precision": 0.5,
+        "recall": 0.3846,
+        "f1": 0.4348,
+        "tp": 10,
+        "fp": 10,
+        "fn": 16
+      },
+      "LOC": {
+        "precision": 0.7308,
+        "recall": 0.7917,
+        "f1": 0.76,
+        "tp": 19,
+        "fp": 7,
+        "fn": 5
+      }
+    }
+  },
+  "corpus_stats": {
+    "sentences_per_corpus": 200,
+    "avg_entity_length_words": 1.36,
+    "total_entity_mentions": 663
+  },
+  "regex_pattern_counts": {
+    "MONEY": 3,
+    "DATE": 4,
+    "PERCENT": 3,
+    "EMAIL": 2,
+    "URL": 1,
+    "PHONE": 1
+  },
+  "gold_set_sentences": 30
+}

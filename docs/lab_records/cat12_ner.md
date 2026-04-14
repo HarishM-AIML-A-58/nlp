@@ -27,8 +27,8 @@ evaluation set.
 
 | Dataset | Source | Sentences Used | Notes |
 |---------|--------|---------------|-------|
-| Brown Corpus | `nltk.corpus.brown` | 2 000 | General American English, multiple genres |
-| Reuters Corpus | `nltk.corpus.reuters` | 2 000 | News-wire text, entity-rich |
+| Brown Corpus | `nltk.corpus.brown` | 200 | General American English, multiple genres |
+| Reuters Corpus | `nltk.corpus.reuters` | 200 | News-wire text, entity-rich |
 | Gold Evaluation Set | Hand-annotated (this lab) | 30 | Covers PERSON, ORG, LOC entities |
 
 The **gold evaluation set** consists of 30 sentences constructed to cover diverse

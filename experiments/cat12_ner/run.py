@@ -30,7 +30,7 @@ os.makedirs(METRICS_DIR, exist_ok=True)
 
 
 # ─── NLTK downloads ───────────────────────────────────────────────────────────
-def _download():
+def _download_nltk_data():
     for res in [
         'brown', 'reuters', 'punkt', 'punkt_tab',
         'averaged_perceptron_tagger', 'averaged_perceptron_tagger_eng',
@@ -332,7 +332,7 @@ GOLD_SENTENCES = [
     ("The BBC reported live from London during the royal ceremony.",
      [('BBC', 'ORG'), ('London', 'LOC')]),
     ("Dr. Martin Luther King Jr. led the civil rights movement in the United States.",
-     [('Martin Luther', 'PERSON'), ('United States', 'LOC')]),
+     [('Martin Luther King', 'PERSON'), ('United States', 'LOC')]),
     ("Intel unveiled its latest processor at a conference in San Francisco.",
      [('Intel', 'ORG'), ('San Francisco', 'LOC')]),
     ("Amnesty International criticized the government of China for human rights abuses.",
@@ -616,7 +616,7 @@ def run():
     print("  Category 12 — Named Entity Recognition")
     print("=" * 65)
 
-    _download()
+    _download_nltk_data()
 
     # ── Evaluation ────────────────────────────────────────────────────────────
     print("\n[1/4] Evaluating Rule-Based and NLTK ne_chunk NER on gold set…")
