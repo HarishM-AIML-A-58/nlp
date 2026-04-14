@@ -394,6 +394,21 @@ CATEGORY_META = {
         'subtitle': 'Word2Vec · PCA · t-SNE · UMAP',
         'datasets': 'Brown Corpus + Reuters Corpus (combined ~260k tokens)',
     },
+    10: {
+        'title': 'Hidden Markov Model for POS Tagging',
+        'subtitle': 'Forward · Backward · Viterbi · Baum-Welch',
+        'datasets': 'Brown Corpus with Universal POS tags (NLTK)',
+    },
+    11: {
+        'title': 'Word Sense Disambiguation & Parsing',
+        'subtitle': 'Lesk WSD · Constituency Parsing · Dependency Parsing',
+        'datasets': 'Brown Corpus, WordNet (NLTK)',
+    },
+    12: {
+        'title': 'Named Entity Recognition',
+        'subtitle': 'Rule-Based · NLTK NE Chunk · Regex Patterns',
+        'datasets': 'Brown Corpus, Reuters Corpus (NLTK)',
+    },
 }
 
 
@@ -421,6 +436,7 @@ def _get_metric_suffix(cat_num: int) -> str:
         1: 'preprocessing', 2: 'entropy_perplexity', 3: 'rule_morphology',
         4: 'fsa_morphology', 5: 'unigram_model', 6: 'bigram_model',
         7: 'neural_models', 8: 'vector_semantics', 9: 'word_embeddings',
+        10: 'hmm_pos_tagging', 11: 'wsd_parsing', 12: 'ner',
     }
     return suffixes.get(cat_num, '')
 
@@ -526,7 +542,7 @@ def main():
     print("=" * 60)
     os.makedirs(DOCX_DIR, exist_ok=True)
 
-    for cat_num in range(1, 10):
+    for cat_num in range(1, 13):
         meta     = CATEGORY_META[cat_num]
         out_path = build_docx(cat_num)
         if out_path:

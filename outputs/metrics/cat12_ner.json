@@ -74,12 +74,12 @@
   },
   "evaluation_f1_scores": {
     "rule_based": {
-      "PERSON": 0.5455,
+      "PERSON": 0.4545,
       "ORG": 0.898,
       "LOC": 0.8372
     },
     "nltk_ne_chunk": {
-      "PERSON": 0.4286,
+      "PERSON": 0.381,
       "ORG": 0.4348,
       "LOC": 0.76
     }
@@ -87,12 +87,12 @@
   "evaluation_full": {
     "rule_based": {
       "PERSON": {
-        "precision": 0.6667,
-        "recall": 0.4615,
-        "f1": 0.5455,
-        "tp": 6,
-        "fp": 3,
-        "fn": 7
+        "precision": 0.5556,
+        "recall": 0.3846,
+        "f1": 0.4545,
+        "tp": 5,
+        "fp": 4,
+        "fn": 8
       },
       "ORG": {
         "precision": 0.9565,
@@ -113,12 +113,12 @@
     },
     "nltk_ne_chunk": {
       "PERSON": {
-        "precision": 0.3103,
-        "recall": 0.6923,
-        "f1": 0.4286,
-        "tp": 9,
-        "fp": 20,
-        "fn": 4
+        "precision": 0.2759,
+        "recall": 0.6154,
+        "f1": 0.381,
+        "tp": 8,
+        "fp": 21,
+        "fn": 5
       },
       "ORG": {
         "precision": 0.5,
