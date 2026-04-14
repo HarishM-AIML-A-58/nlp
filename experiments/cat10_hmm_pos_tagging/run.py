@@ -115,7 +115,7 @@ def build_hmm(train_sents):
 
 # ─── Forward Algorithm ───────────────────────────────────────────────────────
 
-def forward_log_prob(obs, tag2i, word2i, log_pi, log_A, log_B):
+def forward_log_prob(obs, word2i, log_pi, log_A, log_B):
     """
     Compute log P(obs | model) using the Forward algorithm in log-space.
 
@@ -254,7 +254,7 @@ def baum_welch(obs_seqs, tags, word2i, log_pi, log_A, log_B, n_iter=2):
             if len(obs) < 2:
                 continue
             try:
-                lp, alpha = forward_log_prob(obs, None, word2i, log_pi, log_A, log_B)
+                lp, alpha = forward_log_prob(obs, word2i, log_pi, log_A, log_B)
                 beta = backward_log(obs, word2i, log_A, log_B)
             except Exception:
                 continue
@@ -480,7 +480,7 @@ def run():
     fwd_labels    = []
     for i, sent in enumerate(sample_sents):
         words = [w for w, _ in sent]
-        lp, _ = forward_log_prob(words, tag2i, word2i, log_pi, log_A, log_B)
+        lp, _ = forward_log_prob(words, word2i, log_pi, log_A, log_B)
         fwd_log_probs.append(float(lp))
         fwd_labels.append(f"S{i+1}")
         print(f"  Sentence {i+1:2d} (len={len(words):2d}): log P = {lp:.4f}")
@@ -492,7 +492,7 @@ def run():
     demo_sent  = test_sents[0]
     demo_words = [w for w, _ in demo_sent]
     demo_true  = [t for _, t in demo_sent]
-    _, alpha = forward_log_prob(demo_words, tag2i, word2i, log_pi, log_A, log_B)
+    _, alpha = forward_log_prob(demo_words, word2i, log_pi, log_A, log_B)
     beta      = backward_log(demo_words, word2i, log_A, log_B)
     gamma     = state_posteriors(alpha, beta)   # (T, N)
     print(f"  Sentence: {' '.join(demo_words[:8])}...")

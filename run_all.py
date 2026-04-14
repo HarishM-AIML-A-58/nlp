@@ -112,7 +112,6 @@ def main():
     print_banner()
 
     # Determine which categories to run
-
     to_run = sorted(CATEGORIES.keys())
     if args.cat:
         to_run = sorted(c for c in args.cat if c in CATEGORIES)
