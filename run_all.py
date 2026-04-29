@@ -20,15 +20,18 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
 CATEGORIES = {
-    1: ('cat1_preprocessing',      'Text Preprocessing'),
-    2: ('cat2_entropy_perplexity', 'Entropy, Cross-Entropy, Perplexity'),
-    3: ('cat3_rule_morphology',    'Rule-Based Morphological Analyzer'),
-    4: ('cat4_fsa_morphology',     'FSA-Based Morphological Analyzer'),
-    5: ('cat5_unigram_model',      'Unigram Language Model'),
-    6: ('cat6_bigram_model',       'Bigram Language Model'),
-    7: ('cat7_neural_models',      'Neural Language Models'),
-    8: ('cat8_vector_semantics',   'Vector Semantics'),
-    9: ('cat9_word_embeddings',    'Word Embeddings + Visualization'),
+    1:  ('cat1_preprocessing',      'Text Preprocessing'),
+    2:  ('cat2_entropy_perplexity', 'Entropy, Cross-Entropy, Perplexity'),
+    3:  ('cat3_rule_morphology',    'Rule-Based Morphological Analyzer'),
+    4:  ('cat4_fsa_morphology',     'FSA-Based Morphological Analyzer'),
+    5:  ('cat5_unigram_model',      'Unigram Language Model'),
+    6:  ('cat6_bigram_model',       'Bigram Language Model'),
+    7:  ('cat7_neural_models',      'Neural Language Models'),
+    8:  ('cat8_vector_semantics',   'Vector Semantics'),
+    9:  ('cat9_word_embeddings',    'Word Embeddings + Visualization'),
+    10: ('cat10_hmm_pos_tagging',   'HMM POS Tagging'),
+    11: ('cat11_wsd_parsing',       'Word Sense Disambiguation & Parsing'),
+    12: ('cat12_ner',               'Named Entity Recognition'),
 }
 
 
@@ -58,7 +61,7 @@ def run_category(cat_num: int) -> tuple:
 def print_banner():
     print("\n" + "=" * 70)
     print("  NLP LAB REPOSITORY — FULL EXPERIMENT SUITE")
-    print("  Covers Categories 1–9: Preprocessing → Embeddings")
+    print("  Covers Categories 1–12: Preprocessing → NER")
     print("=" * 70)
 
 

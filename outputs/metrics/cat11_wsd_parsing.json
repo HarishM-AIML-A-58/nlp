@@ -1,0 +1,27 @@
+{
+  "wsd_nltk_lesk_accuracy": 0.5,
+  "wsd_simple_lesk_accuracy": 0.65,
+  "wsd_test_cases": 20,
+  "constituency_sentences": 8,
+  "constituency_parsed_ok": 8,
+  "dependency_sentences": 5,
+  "dependency_method": "Rule-based (NLTK POS + heuristics)",
+  "num_sentences_parsed": 13,
+  "constituency_examples": [
+    "the dog sees a cat",
+    "John loves Mary",
+    "She reads a big book",
+    "the man saw a bird",
+    "Alice chased the old cat",
+    "He eats a small plant",
+    "the crane eats a bat",
+    "Mary likes the tall tree"
+  ],
+  "dependency_examples": [
+    "The dog chased the cat in the garden.",
+    "Alice reads a fascinating book about history.",
+    "John can see the tall crane near the river.",
+    "The old man sat on a wooden bench.",
+    "She loves the little bird by the tree."
+  ]
+}
